@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.sky{
+  background-image: url("./1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position-y: center;
+filter: grayscale(1);
+    width: 100%;
+    height: 60vh;
+}
+.grass{
+    background-color: rgb(88, 88, 88);
+    filter: brightness(1.5);
+    width: 100%;
+    height: 1vh;
+}
+.road{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 38vh;
+    
+}
+.line{
+border: dashed  white;
+position: relative;
+top: 50%;
+}
+.drive{
+    position: absolute;
+    top: 52%;
+    height: 27%;
+    animation-name: driving;
+    animation-duration: 8s ;
+    animation-iteration-count: infinite;
+    filter:brightness(70%);
+}
+
+@keyframes driving{
+from{
+transform: translateX(0);
+}
+to{
+transform: translateX(1500px);
+}
+}
+.home{
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    width: 35%;
+}
+.pic{
+    position: relative;
+ top: 7%;
+ width: 70%;
+ height: 94%;
+ left: 32%;
+ filter: brightness(140%) !important;
+}
